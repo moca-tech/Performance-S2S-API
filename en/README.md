@@ -88,7 +88,7 @@
 | remaining | int | Remaining daily cap.<br />Suggest to control traffic according remaining daily cap and CVR. |
 | device_id_mandatory | boolean | GAID/IDFA are mandatory to pass Ture: Client request to pass |
 | preview_link | string | Link to preview the product |
-| tracking_link | string | Link to Click Through.<br />Please refer to **Postback integration guide**<br />Please pass GAID/IDFA if device ID mandatory. |
+| tracking_link | string | Link to Click Through，params as below（All of these can be added in Postback URL）:<br />aff_pub: Your sub-publisher ID or Ad Slot ID<br />aff_sub: Your Click ID which usually be used in your Postback URL.<br />gaid: Google Advertising ID<br />idfa: Apple IDFA<br />app_bundle: Your traffic's App Bundle<br />app_name: Your traffic's App Name<br />Custom Parameters: aff_sub2, aff_sub3, aff_sub4, aff_sub5 |
 | link_type | string | Type of tracking link<br />e.g. [WEB\|MARKET] |
 | imp_tracker | string | Impression tracking link.<br />Please pass GAID/IDFA if device ID mandatory. |
 | rating | float | Recommend start<br />1-5 start, refer to google playstore. |

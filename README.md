@@ -92,7 +92,7 @@
 | remaining | int | 当日广告项目剩余Cap，建议根据广告剩余Cap结合转化率决定投放量。 |
 | device_id_mandatory | boolean | GAID/IDFA是否必传 |
 | preview_link | string | 广告项目预览地址 |
-| tracking_link | string | 广告项目追踪链接（请参考POSTBACK接入说明）<br />注意：当device_id_mandatory为true时，需要携带gaid或idfa |
+| tracking_link | string | 广告项目追踪链接，参数如下（以下参数亦可用于Postback回传）：<br />aff_pub：子渠道或广告位<br />aff_sub：渠道点击ID（Transaction ID），通常用于Postback供媒体方归因<br />gaid：Google Advertising ID， Android平台上传<br />idfa: Apple IDFA，iOS平台上传<br />app_bundle：App流量包名<br />app_name：App流量名字<br />渠道自定义参数：aff_sub2, aff_sub3, aff_sub4, aff_sub5 |
 | link_type | string | 追踪链接类型[WEB\|MARKET] |
 | imp_tracker | string | 广告项目展示上报链接（上传参数参照tracking link）<br />注意：当device_id_mandatory为true时，需要携带gaid或idfa |
 | rating | float | appstore评分 |
